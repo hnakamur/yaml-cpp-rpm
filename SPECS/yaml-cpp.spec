@@ -7,8 +7,6 @@ Group:          Development/Libraries
 License:        MIT
 URL:            http://code.google.com/p/yaml-cpp/
 Source0:        http://yaml-cpp.googlecode.com/files/%{name}-%{version}.tar.gz
-# Make yaml-cpp compatible with boost 1.67+
-Patch1:         yaml-cpp-boost-1.67.diff
 
 BuildRequires:  cmake
 BuildRequires:  boost-devel
