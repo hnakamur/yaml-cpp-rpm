@@ -80,7 +80,7 @@ popd
 
 
 %files
-%doc license.txt
+%doc LICENSE
 %{_libdir}/*.so.*
 
 %files devel
@@ -89,7 +89,7 @@ popd
 %{_libdir}/pkgconfig/*.pc
 
 %files static
-%license license.txt
+%license LICENSE
 %{_libdir}/*.a
 
 
