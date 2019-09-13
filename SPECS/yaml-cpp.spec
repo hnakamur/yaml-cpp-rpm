@@ -40,7 +40,7 @@ The %{name}-static package contains the static library for %{name}.
 
 
 %prep
-%autosetup -p1
+%autosetup -p1 -n yaml-cpp-yaml-cpp-%{version}
 # Fix eol
 sed -i 's/\r//' license.txt
 
