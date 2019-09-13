@@ -1,7 +1,7 @@
 Name:           yaml-cpp
 Epoch:          1
-Version:        0.5.1
-Release:        2%{?dist}
+Version:        0.6.2
+Release:        1%{?dist}
 Summary:        A YAML parser and emitter for C++
 Group:          Development/Libraries
 License:        MIT
@@ -98,6 +98,9 @@ popd
 
 
 %changelog
+* Fri Sep 13 2019 Hiroaki Nakamura <hnakamur@gmail.com> - 1:0.6.2-1
+- 0.6.2
+
 * Wed Jul 24 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 1:0.5.1-2
 - Make yaml-cpp compatible with boost 1.67+
 
