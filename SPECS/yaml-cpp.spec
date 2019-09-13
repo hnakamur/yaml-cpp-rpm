@@ -67,10 +67,18 @@ popd
 %install
 pushd build-shared
     %make_install
+    rm -rf %{buildroot}/%{_includedir}/gmock/
+    rm -rf %{buildroot}/%{_includedir}/gtest/
+    rm -rf %{buildroot}/%{_prefix}/lib/libgmock*
+    rm -rf %{buildroot}/%{_prefix}/lib/libgtest*
 popd
 
 pushd build-static
     %make_install
+    rm -rf %{buildroot}/%{_includedir}/gmock/
+    rm -rf %{buildroot}/%{_includedir}/gtest/
+    rm -rf %{buildroot}/%{_prefix}/lib/libgmock*
+    rm -rf %{buildroot}/%{_prefix}/lib/libgtest*
 popd
 
 
@@ -85,6 +93,8 @@ popd
 
 %files devel
 %{_includedir}/yaml-cpp/
+%{_libdir}/cmake/yaml-cpp/*.cmake
+%{_libdir}/*.so
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
 
